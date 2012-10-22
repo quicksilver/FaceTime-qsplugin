@@ -1,0 +1,252 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D458F37816359B620025A801 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D458F37716359B620025A801 /* Cocoa.framework */; };
+		D458F37E16359B620025A801 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D458F37C16359B620025A801 /* InfoPlist.strings */; };
+		D458F38A16359B620025A801 /* QSFacetimeAction.m in Sources */ = {isa = PBXBuildFile; fileRef = D458F38916359B620025A801 /* QSFacetimeAction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D458F37416359B620025A801 /* QSFacetime.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSFacetime.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D458F37716359B620025A801 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D458F37B16359B620025A801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		D458F37D16359B620025A801 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D458F38016359B620025A801 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		D458F38116359B620025A801 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		D458F38216359B620025A801 /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		D458F38316359B620025A801 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		D458F38416359B620025A801 /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		D458F38516359B620025A801 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		D458F38816359B620025A801 /* QSFacetimeAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSFacetimeAction.h; sourceTree = "<group>"; };
+		D458F38916359B620025A801 /* QSFacetimeAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSFacetimeAction.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D458F37116359B620025A801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D458F37816359B620025A801 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D458F36816359B620025A801 = {
+			isa = PBXGroup;
+			children = (
+				D458F37916359B620025A801 /* QSFacetime */,
+				D458F37616359B620025A801 /* Frameworks */,
+				D458F37516359B620025A801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D458F37516359B620025A801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D458F37416359B620025A801 /* QSFacetime.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D458F37616359B620025A801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D458F37716359B620025A801 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D458F37916359B620025A801 /* QSFacetime */ = {
+			isa = PBXGroup;
+			children = (
+				D458F38816359B620025A801 /* QSFacetimeAction.h */,
+				D458F38916359B620025A801 /* QSFacetimeAction.m */,
+				D458F37F16359B620025A801 /* Configuration */,
+				D458F37A16359B620025A801 /* Supporting Files */,
+			);
+			path = QSFacetime;
+			sourceTree = "<group>";
+		};
+		D458F37A16359B620025A801 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D458F37B16359B620025A801 /* Info.plist */,
+				D458F37C16359B620025A801 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D458F37F16359B620025A801 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D458F38016359B620025A801 /* Common.xcconfig */,
+				D458F38116359B620025A801 /* Debug.xcconfig */,
+				D458F38216359B620025A801 /* Developer.xcconfig */,
+				D458F38316359B620025A801 /* QSPlugIn.xcconfig */,
+				D458F38416359B620025A801 /* Quicksilver.pch */,
+				D458F38516359B620025A801 /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D458F37316359B620025A801 /* FaceTime Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D458F39016359B620025A801 /* Build configuration list for PBXNativeTarget "FaceTime Plugin" */;
+			buildPhases = (
+				D458F36F16359B620025A801 /* ShellScript */,
+				D458F37016359B620025A801 /* Sources */,
+				D458F37116359B620025A801 /* Frameworks */,
+				D458F37216359B620025A801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FaceTime Plugin";
+			productName = QSFacetime;
+			productReference = D458F37416359B620025A801 /* QSFacetime.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D458F36A16359B620025A801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Quicksilver;
+			};
+			buildConfigurationList = D458F36D16359B620025A801 /* Build configuration list for PBXProject "QSFacetime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D458F36816359B620025A801;
+			productRefGroup = D458F37516359B620025A801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D458F37316359B620025A801 /* FaceTime Plugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D458F37216359B620025A801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D458F37E16359B620025A801 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D458F36F16359B620025A801 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D458F37016359B620025A801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D458F38A16359B620025A801 /* QSFacetimeAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D458F37C16359B620025A801 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D458F37D16359B620025A801 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D458F38E16359B620025A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D458F38116359B620025A801 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		D458F38F16359B620025A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D458F38516359B620025A801 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		D458F39116359B620025A801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D458F38316359B620025A801 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D458F39216359B620025A801 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D458F38316359B620025A801 /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D458F36D16359B620025A801 /* Build configuration list for PBXProject "QSFacetime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D458F38E16359B620025A801 /* Debug */,
+				D458F38F16359B620025A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D458F39016359B620025A801 /* Build configuration list for PBXNativeTarget "FaceTime Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D458F39116359B620025A801 /* Debug */,
+				D458F39216359B620025A801 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D458F36A16359B620025A801 /* Project object */;
+}
