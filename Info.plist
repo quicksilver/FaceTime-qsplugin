@@ -41,6 +41,8 @@
 			<string>com.apple.FaceTime</string>
 			<key>name</key>
 			<string>FaceTime</string>
+			<key>validatesObjects</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>QSPlugIn</key>
