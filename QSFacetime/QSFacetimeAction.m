@@ -29,8 +29,10 @@
     if (facetimeURL) {
         [[NSWorkspace sharedWorkspace] openURL:facetimeURL];
     } else {
-        NSLog(@"unable to initiate FaceTime: %@", [dObject stringValue]);
-        NSBeep();
+        NSString *localizedErrorFormat = NSLocalizedStringFromTableInBundle(@"Unable to initiate FaceTime with %@", nil, [NSBundle bundleForClass:[self class]], nil);
+        NSString *localizedTitle = NSLocalizedStringFromTableInBundle(@"Quicksilver FaceTime Error", nil, [NSBundle bundleForClass:[self class]], nil);
+        NSString *errorMessage = [NSString stringWithFormat:localizedErrorFormat, [dObject displayName]];
+        QSShowNotifierWithAttributes([NSDictionary dictionaryWithObjectsAndKeys:@"QSFaceTimeFailed", QSNotifierType, [QSResourceManager imageNamed:@"AlertStopIcon"], QSNotifierIcon, localizedTitle, QSNotifierTitle, errorMessage, QSNotifierText, nil]);
     }
     return nil;
 }
