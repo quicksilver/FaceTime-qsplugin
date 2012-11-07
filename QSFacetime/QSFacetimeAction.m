@@ -9,7 +9,7 @@
 
 @implementation QSQSFacetimeActionProvider
 
-- (QSObject *)facetime:(QSObject *)dObject
+- (QSObject *)startFaceTimeWith:(QSObject *)dObject
 {
     NSString *contactString = nil;
     NSURL *facetimeURL = nil;

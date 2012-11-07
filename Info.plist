@@ -31,7 +31,7 @@
 			<key>actionClass</key>
 			<string>QSQSFacetimeActionProvider</string>
 			<key>actionSelector</key>
-			<string>facetime:</string>
+			<string>startFaceTimeWith:</string>
 			<key>directTypes</key>
 			<array>
 				<string>qs.contact.email</string>
