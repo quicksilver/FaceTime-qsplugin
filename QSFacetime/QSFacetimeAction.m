@@ -23,7 +23,6 @@
         // for the latter, it's unlikely to do what you want, but it's something
         contactString = [dObject objectForType:QSEmailAddressType];
     }
-    NSLog(@"initiating FaceTime with %@", contactString);
     if (contactString) {
         facetimeURL = [NSURL URLWithString:[NSString stringWithFormat:@"facetime://%@", contactString]];
     }
