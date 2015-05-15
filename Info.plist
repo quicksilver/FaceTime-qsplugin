@@ -31,7 +31,7 @@
 			<key>actionClass</key>
 			<string>QSQSFacetimeActionProvider</string>
 			<key>actionSelector</key>
-			<string>startFaceTimeWith:</string>
+			<string>facetimeVideoWith:</string>
 			<key>directTypes</key>
 			<array>
 				<string>qs.contact.email</string>
@@ -41,6 +41,24 @@
 			<string>com.apple.FaceTime</string>
 			<key>name</key>
 			<string>FaceTime</string>
+			<key>validatesObjects</key>
+			<true/>
+		</dict>
+		<key>QSFacetimeAudioAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSQSFacetimeActionProvider</string>
+			<key>actionSelector</key>
+			<string>facetimeAudioWith:</string>
+			<key>directTypes</key>
+			<array>
+				<string>qs.contact.email</string>
+				<string>qs.contact.phone</string>
+			</array>
+			<key>icon</key>
+			<string>com.apple.FaceTime</string>
+			<key>name</key>
+			<string>FaceTime Audio</string>
 			<key>validatesObjects</key>
 			<true/>
 		</dict>

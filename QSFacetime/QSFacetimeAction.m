@@ -9,7 +9,7 @@
 
 @implementation QSQSFacetimeActionProvider
 
-- (QSObject *)startFaceTimeWith:(QSObject *)dObject
+- (QSObject *)startFaceTimeWith:(QSObject *)dObject urlScheme:(NSString *)scheme
 {
     NSString *contactString = nil;
     NSURL *facetimeURL = nil;
@@ -24,7 +24,7 @@
         contactString = [dObject objectForType:QSEmailAddressType];
     }
     if (contactString) {
-        facetimeURL = [NSURL URLWithString:[NSString stringWithFormat:@"facetime://%@", contactString]];
+        facetimeURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@", scheme, contactString]];
     }
     if (facetimeURL) {
         [[NSWorkspace sharedWorkspace] openURL:facetimeURL];
@@ -37,10 +37,20 @@
     return nil;
 }
 
+- (QSObject *)facetimeVideoWith:(QSObject *)dObject
+{
+    return [self startFaceTimeWith:dObject urlScheme:@"facetime"];
+}
+
+- (QSObject *)facetimeAudioWith:(QSObject *)dObject
+{
+    return [self startFaceTimeWith:dObject urlScheme:@"facetime-audio"];
+}
+
 - (NSArray *)validActionsForDirectObject:(QSObject *)dObject indirectObject:(QSObject *)iObject
 {
     if ([dObject count] == 1) {
-        return [NSArray arrayWithObject:@"QSFacetimeAction"];
+        return @[@"QSFacetimeAction", @"QSFacetimeAudioAction"];
     }
     return nil;
 }
