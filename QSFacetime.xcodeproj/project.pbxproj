@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D458F37416359B620025A801 /* QSFacetime.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSFacetime.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D458F37416359B620025A801 /* FaceTime Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FaceTime Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D458F37716359B620025A801 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D458F37B16359B620025A801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		D458F37D16359B620025A801 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		D458F37516359B620025A801 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D458F37416359B620025A801 /* QSFacetime.qsplugin */,
+				D458F37416359B620025A801 /* FaceTime Plugin.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			);
 			name = "FaceTime Plugin";
 			productName = QSFacetime;
-			productReference = D458F37416359B620025A801 /* QSFacetime.qsplugin */;
+			productReference = D458F37416359B620025A801 /* FaceTime Plugin.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
