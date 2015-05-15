@@ -114,6 +114,10 @@
 				<string>1.0</string>
 			</dict>
 		</array>
+		<key>osRequired</key>
+		<string>10.9</string>
+		<key>version</key>
+		<string>4005</string>
 	</dict>
 </dict>
 </plist>
