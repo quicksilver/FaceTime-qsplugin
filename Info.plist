@@ -19,11 +19,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
+	<string>1.1</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>QSActions</key>
 	<dict>
 		<key>QSFacetimeAction</key>
@@ -75,8 +73,8 @@
 		<string>Initiate FaceTime with Contacts</string>
 		<key>extendedDescription</key>
 		<string>&lt;h2&gt;FaceTime&lt;/h2&gt;
-&lt;p&gt;This plug-in adds a FaceTime action.&lt;/p&gt;
-&lt;p&gt;With a phone number, e-mail address, or contact&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; selected, choose the FaceTime action in the second pane.&lt;/p&gt;
+&lt;p&gt;This plug-in adds FaceTime and FaceTime Audio actions.&lt;/p&gt;
+&lt;p&gt;With a phone number, e-mail address, or contact&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; selected, choose a FaceTime action in the second pane.&lt;/p&gt;
 &lt;p&gt;The FaceTime application will ask you to confirm before actually contacting the person.&lt;/p&gt;
 &lt;div class="footnote"&gt;
 &lt;hr&gt;

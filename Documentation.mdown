@@ -1,8 +1,8 @@
 ## FaceTime ##
 
-This plug-in adds a FaceTime action.
+This plug-in adds FaceTime and FaceTime Audio actions.
 
-With a phone number, e-mail address, or contact[^1] selected, choose the FaceTime action in the second pane.
+With a phone number, e-mail address, or contact[^1] selected, choose a FaceTime action in the second pane.
 
 The FaceTime application will ask you to confirm before actually contacting the person.
 
