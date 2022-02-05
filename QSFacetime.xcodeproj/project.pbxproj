@@ -105,7 +105,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D458F39016359B620025A801 /* Build configuration list for PBXNativeTarget "FaceTime Plugin" */;
 			buildPhases = (
-				D458F36F16359B620025A801 /* ShellScript */,
 				D458F37016359B620025A801 /* Sources */,
 				D458F37116359B620025A801 /* Frameworks */,
 				D458F37216359B620025A801 /* Resources */,
@@ -127,12 +126,18 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Quicksilver;
+				TargetAttributes = {
+					D458F37316359B620025A801 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = D458F36D16359B620025A801 /* Build configuration list for PBXProject "QSFacetime" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D458F36816359B620025A801;
@@ -155,22 +160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D458F36F16359B620025A801 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D458F37016359B620025A801 /* Sources */ = {
